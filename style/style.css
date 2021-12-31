@@ -1,0 +1,572 @@
+:root{
+    --main-font : 'Roboto', sans-serif;
+    --font-color: rgb(41, 41, 41);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+a:link{
+    text-decoration: none!important;
+  }
+
+body, html {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+                    Nav Bar
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+  
+  .topnav {
+    overflow: hidden;
+    background-color: rgb(0, 4, 230);
+    font-family: var(--main-font);
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+                    Front Page
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+
+/* body, html{
+    height: 100%;
+} */
+
+body{
+
+    background-color: rgb(0, 68, 255);
+    min-height: 88.2vh;
+
+    /* background-image: linear-gradient(rgb(0, 68, 255), rgb(0, 160, 253)); */
+    
+
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div.header{
+    /* outline: 3px solid red; */
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+h1.title{
+    font-size: 5.5rem;
+    font-family: var(--main-font);
+    font-weight: 1000;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+hr.title-underline{
+    width: 250px;
+    margin-top: -30px;
+    height: 5px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+}
+
+
+div.main{
+    width: 65%;
+    /* height: 600px; */
+    background-color: #fff;
+    border-radius: 10px;
+    margin: auto;
+    padding: 50px 0px 50px 0px;
+
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+div.btn-div{
+    /* outline: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    /* padding: 50px; */
+}
+
+button.btn{
+    /* padding: 20px; */
+    width: 300px;
+    height: 70px;
+    background-color: rgb(184, 184, 184);
+    border: none;
+    border-radius: 10px;
+    font-size: 1.875rem;
+    font-family: var(--main-font);
+    font-weight: 500;
+    color: var(--font-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 50px 0px  50px;
+    text-decoration: none;
+    cursor: pointer;
+
+    transition-duration: 0.5s;
+
+}
+
+button.btn-start{
+    background-color: rgb(0, 153, 255);
+}
+
+button.btn-start:hover{
+    background-color:  rgb(52, 241, 232);
+}
+
+button.btn-add{
+    transition-duration: 0.5s;
+}
+
+button.btn-add:hover{
+    background-color:  rgb(52, 241, 232);
+}
+
+
+
+img.rocket-img{
+    width: 300px;
+}
+
+div.r-img{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+
+}
+
+
+
+
+
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+                    Add Quiz Form
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+h1.add-title{
+    text-align: center;
+    font-family: var(--main-font);
+    font-size: 100px;
+    color: #fff;
+    margin-top: 100px;
+}
+
+div.add-quiz-form{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 60%;
+    margin: auto;
+    margin-top: -15px;
+
+    /* box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3); */
+    margin-bottom: 50px;
+
+    /* display: flex;
+    flex-direction: column; */
+}
+
+div.form-content{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 75%;
+
+    /* outline: 3px solid red; */
+}
+
+.add-input, .add-special{
+    /* width: 75%; */
+    height: 40px;
+    /* margin: 10px 0px 10px 0px; */
+    font-size: 15px;
+
+    border: 2px solid rgb(54, 54, 54);
+    border-radius: 5px;
+}
+
+label.add-inp-label{
+    font-family: var(--main-font);
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+
+textarea{
+    resize: none;
+}
+
+textarea.add-input{
+    height: 100px;
+    font-family: var(--main-font);
+}
+
+textarea.add-special{
+    height: 60px;
+    font-family: var(--main-font);
+}
+
+button.add-quiz-submit{
+    padding: 10px;
+    background-color: rgb(29, 221, 29);
+    border: none;
+    border-radius: 5px;
+    margin-top: 30px;
+    font-family: var(--main-font);
+    cursor: pointer;
+
+    transition-duration: 0.5s;
+}
+
+button.add-quiz-submit:hover{
+    background-color: rgb(0, 148, 0);
+    color: #fff;
+}
+
+
+
+
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+                    Select Subject
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+
+h1.select-title{
+    text-align: center;
+    font-size: 80px;
+    font-family: var(--main-font);
+    font-weight: 500;
+    color: #fff;
+}
+
+
+div.select-title-div{
+    margin-top: 100px;
+}
+
+img.select-subject-icon{
+    width: 35px;
+    margin-right: 30px;
+}
+
+div.select-subjests-div{
+    width: 70%;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    margin-bottom: 50px;
+}
+
+div.select-one-subject{
+    /* outline: 1px solid red; */
+    width: 400px;
+    /* padding: 30px; */
+    padding: 30px 0px 30px 0px;
+    box-sizing: border-box;
+    /* margin: auto; */
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+button.subject-btn{
+    width: 60%;
+    height: 60px;
+
+    font-family: var(--main-font);
+    font-size: 20px;
+    font-weight: 500;
+    border: 2px solid rgb(0, 160, 253);
+    background-color: transparent;
+    border-radius: 10px;
+    cursor: pointer;
+
+    transition-duration: 0.5s;    
+}
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+                    Quiz-game
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+h1.score-text{
+    text-align: center;
+    color: #fff;
+    font-size: 80px;
+    font-family: var(--main-font);
+}
+
+div.quiz-content{
+    background-color: #fff;
+    margin: auto;
+    width: 45%;
+    /* height: 600px; */
+    border-radius: 10px;
+    padding: 30px;
+    padding-bottom: 100px;
+    margin-bottom: 70px;
+}
+
+
+
+p.quiz-text, ol.quiz-ans-txt{
+    font-family: var(--main-font);
+    color: var(--font-color);
+    font-size: 20px;
+}
+
+ol.quiz-ans-txt{
+    margin-left: 50px;
+    /* outline: 2px solid red; */
+}
+
+button.quiz-ans-btn, button.correct-btn, button.incorrect-btn{
+    padding: 20px;
+    font-size: 20px;
+    font-family: var(--main-font);
+    color: var(--font-color);
+    width: 20%;
+    margin: 0px 20px 0px 20px;
+    background-color: rgb(0, 81, 255);
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+
+
+button.incorrect-btn{
+    background-color: rgb(182, 0, 0);
+    transition-duration: 0.5s;
+}
+button.correct-btn{
+    background-color: rgb(0, 182, 0);
+    transition-duration: 0.5s;
+}
+
+div.next-quiz{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 30px; */
+    /* margin-bottom: -10px; */
+    /* outline: 2px solid red; */
+}
+
+div.all-quiz{
+    margin-top: 30px;
+}
+
+button.none-next-quiz-btn, button.none-retry-btn{
+
+    padding: 15px 0px 15px 0px;
+    width: 50%;
+    font-family: var(--main-font);
+    background-color: rgb(70, 127, 250);
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    display: none;    
+    font-size: 17px;
+    cursor: pointer;
+    /* margin-bottom: 10px; */
+    /* margin-top: -20px; */
+    /* outline: 2px solid red; */
+
+}
+
+button.none-next-quiz-btn:hover{
+    background-color: rgb(0, 132, 255);  
+}
+
+div.quiz-ans{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    flex-wrap: wrap;
+    /* outline: 2px solid red; */
+    /* align-content: space-between; */
+
+}
+
+div.report-quiz{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+}
+
+button.report-btn{
+    width: 100%;
+    height: 40px;
+    /* background-color: rgb(255, 67, 67); */
+    background-color: transparent;
+    border: 3px solid rgb(255, 67, 67);
+    margin-top: 50px;
+    /* border: none; */
+    border-radius: 5px;
+    color:rgb(255, 67, 67);
+    font-family: var(--main-font);
+    font-size: 20px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+}
+
+button.quiz-ans-btn:hover{
+    background-color: rgb(0, 132, 255);    
+}
+
+button.report-btn:hover{
+    background-color: rgb(255, 67, 67); 
+    color: #fff;
+}
+p.user_name{
+    font-size: 12px;
+    font-family: var(--main-font);
+    color: var(--font-color);
+}
+
+form.report-form{
+    width: 70%;
+    outline: 2px solid red;
+    height: 30px;
+}
+
+
+
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+                    Game Over
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+div.over-content{
+    margin: auto;
+    background-color: #fff;
+    width: 30%;    
+    padding: 30px;
+    margin-top: 50px;
+    border-radius: 10px;
+
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+h1.y-points, h1.point-num{
+    text-align: center;
+    font-family: var(--main-font);
+    color: var(--font-color);
+    font-size: 70px;
+}
+h1.point-num{
+    font-size: 60px;
+    margin-top: -50px;
+}
+
+img.crown-img{
+    width: 50%;
+}
+
+button.play-again{
+    width: 70%;
+    background-color: #00ee14;
+    font-size: 20px;
+    margin: 75px;
+    border: none;
+    border-radius: 10px;
+    height: 50px;
+    font-family: var(--main-font);
+    transition-duration: 0.5s;
+
+}
+
+button.play-again:hover{
+    background-color: #00a50e;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+/* ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+                    Quiz done
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+
+h1.quiz-done-title{
+    font-family: var(--main-font);
+    font-size: 40px;
+    text-align: center;
+    color: #22ac00;
+}

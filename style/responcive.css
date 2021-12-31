@@ -1,0 +1,328 @@
+/* <link rel="stylesheet" href="responcive.css"> */
+
+/* -------------------------------------------------------------------
+     subject-temp.php
+------------------------------------------------------------------- */
+
+@media screen and (max-width: 1914px) {
+
+    div.quiz-content{
+        width: 70%;
+        padding-bottom: 20px;
+    }
+        
+    }
+        
+@media screen and (max-width: 1914px){
+        div.over-content{
+            width: 60%;
+        }
+        img.crown-img{
+            width: 20%;
+        }
+    }
+
+@media screen and (max-width: 1228px){
+    div.quiz-content{
+        width: 90%;
+        padding-bottom: 20px;
+        /* outline: 2px solid red; */
+    }
+}
+@media screen and (max-width: 956px){
+    button.quiz-ans-btn, button.correct-btn, button.incorrect-btn{
+        width: 40%;
+        /* font-size: 10px; */
+        margin: 5px 5px 5px 5px;
+        padding: 10px;
+    }
+}
+
+/* -------------------------------------------------------------------
+    select-game.php
+------------------------------------------------------------------- */
+
+@media screen and (max-width: 1143px){
+    h1.select-title{
+        margin-top: -40px;
+        /* outline: 2px solid red; */
+    }
+
+    h1.add-title{
+        margin-top: 50px;
+    }
+}
+
+/* -------------------------------------------------------------------
+    add-quiz.php
+------------------------------------------------------------------- */
+
+@media screen and (max-width: 1251px){
+    div.form-content{
+        /* outline: 2px solid red; */
+        width: 95%;
+    }
+    div.add-quiz-form{
+        width: 90%;
+        padding: 15px 15px 15px 15px;
+    }
+
+}
+
+/* -------------------------------------------------------------------
+    index.php
+------------------------------------------------------------------- */
+
+@media screen and (max-width: 1231px){
+    div.main{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    div.main{
+        width: 80%;
+    }
+    button.btn {
+        width:800;
+        /* width: 280px; */
+        /* font-size: 20px; */
+        margin: 0px 20px 0px 20px;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    div.main{
+        width: 80%;
+    }
+    button.btn {
+        width:900;
+        /* width: 280px; */
+        /* font-size: 20px; */
+        margin: 20px 20px 20px 20px;
+    }
+
+    h1.title{
+        margin-top: -40px;
+    }
+
+    hr.title-underline{
+        margin-bottom: -40px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+/* -------------------------------------------------------------------
+    Index.php
+------------------------------------------------------------------- */
+    h1.title{
+        font-size: 40px;
+        margin-top: -50px;
+    }
+    hr.title-underline{
+        width: 50%;
+        margin-top: 3px;
+    }
+
+    div.main{
+        width: 90%;
+        margin-top: -50px;
+        padding: 30px 0px 30px 0px;
+    }
+    
+    button.btn {
+        width:80%;
+        /* width: 280px; */
+        font-size: 20px;
+        margin: 00px 10px 00px 10px;
+    }
+    img.rocket-img{
+        width: 170px;
+    }
+
+/* -------------------------------------------------------------------
+    add.php
+------------------------------------------------------------------- */
+
+    h1.add-title{
+        font-size: 50px;
+        margin-top: 25px;
+    }
+
+    form.quiz-form{
+        font-size: 13px;
+        /* outline: 2px solid red; */
+        padding: 0px;
+    }
+
+    div.add-quiz-form{
+        width: 90%;
+        padding: 15px 15px 15px 15px;
+    }
+
+    div.form-content{
+        /* outline: 2px solid red; */
+        width: 100%;
+    }
+
+/* -------------------------------------------------------------------
+    quiz-done.php
+------------------------------------------------------------------- */
+
+    div.over-content{
+        width: 90%;
+        margin-top: 30px;
+        /* padding: 10px; */
+    }
+    h1.quiz-done-title{
+        font-size: 23px;
+    }
+    button.play-again{
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+/* -------------------------------------------------------------------
+    select-game.php
+------------------------------------------------------------------- */
+
+    h1.select-title{
+        font-size: 40px;
+        margin-top: -70px;
+        /* outline: 2px solid red; */
+    }
+    div.select-subjests-div{
+        width: 90%;
+        margin-top: 0px;
+        /* outline: 2px solid red; */
+    }
+    button.subject-btn{
+        font-size: 15px;
+        padding: 10px;
+        width: 50%;
+        height: auto;
+        /* outline: 2px solid red; */
+    }
+
+    div.select-one-subject{
+        /* outline: 2px solid red; */
+        width: 300px;
+        margin: -15px 0px -15px 0px;
+    }
+
+/* -------------------------------------------------------------------
+    subject-temp.php
+------------------------------------------------------------------- */
+    h1.score-text{
+        font-size: 45px;
+    }
+    div.quiz-content{
+        width: 90%;
+        padding-bottom: 20px;
+        /* outline: 2px solid red; */
+    }
+    p.quiz-text{
+        /* outline: 2px solid red; */
+        font-size: 11px;
+    }
+    ol.quiz-ans-txt{
+        font-size: 11px;
+        margin-left: -17px;
+    }
+
+    button.quiz-ans-btn, button.correct-btn, button.incorrect-btn{
+        width: 40%;
+        font-size: 10px;
+        margin: 5px 5px 5px 5px;
+        padding: 10px;
+    }
+    div.quiz-ans{
+        /* outline: 2px solid red; */
+        display: flex;
+        margin-top: 0px;
+    }
+
+    button.none-retry-btn{
+        font-size: 11px;
+        margin-top: -5px;
+        /* margin-bottom: -25px; */
+    }
+    button.none-next-quiz-btn{
+        font-size: 11px;
+        margin-top: -20px;
+        /* margin-bottom: -20px; */
+    }
+    button.report-btn{
+        width: 100%;
+        /* margin-top: -20px; */
+    }
+
+/* -------------------------------------------------------------------
+    over.php
+------------------------------------------------------------------- */
+
+    h1.y-points{
+        font-size: 40px;
+        margin: 0px;
+    }
+    div.end-point{
+        padding: 0px;
+    }
+    div.over-content{
+        padding: 15px;
+    }
+    h1.point-num{
+        margin: 0px;
+    }
+    img.crown-img{
+        width: 100px;
+    }
+    button.play-again{
+        padding: 5px;
+        width: 100%;
+    }
+    p.user_name{
+        font-size: 5px;
+        font-family: var(--main-font);
+        color: var(--font-color);
+    }
+
+  }
+
+  /* .btn-div{
+      outline: 2px solid red;
+  } */
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
